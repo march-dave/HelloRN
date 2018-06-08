@@ -1,17 +1,17 @@
-import React, { Component } from "react";
-import { View, Text } from "react-native";
+import React, {Component} from 'react';
+import {View, Text} from 'react-native';
 
 export default class HelloButton extends Component {
-  constructor(props) {
-    super(props);
-  }
+    constructor(props)  {
+        super(props);
+    }
 
-  render() {
-    return (
-      <View>
-        Hello Button
-        {this.props.name}
-      </View>
-    );
-  }
+    render() {
+        return(
+            <View>
+                <Text>Hello Button</Text>
+                {this.props.name}
+            </View>  
+            );
+    }
 }
