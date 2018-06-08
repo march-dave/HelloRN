@@ -25,7 +25,9 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <HelloButton name="This is Hello Button"/>
+        <HelloButton name="Hello"/>
+        <HelloButton name="World" />
+        <HelloButton name="Button" />
       </View>
     );
   }
