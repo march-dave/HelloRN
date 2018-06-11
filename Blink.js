@@ -5,14 +5,17 @@ class Blink extends Component {
   //let
   render() {
     return (
-      <View style={styles.container}>
-        <Text>{this.props.text}</Text>
+      <View>
+        <View style={styles.container}>
+          <Text>{this.props.text}</Text>
+        </View>
+        <View style={{ width: 50, height: 50, backgroundColor: "green" }} />
       </View>
     );
   }
 }
 
-const styles = StyleSheet.create({ 
+const styles = StyleSheet.create({
   container: {
     backgroundColor: "#999"
   }
