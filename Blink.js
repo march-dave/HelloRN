@@ -6,7 +6,7 @@ class Blink extends Component {
   render() {
     return (
       <View>
-        <View style={styles.container}>
+        <View style={{flex: 1}}>
           <Text>{this.props.text}</Text>
         </View>
         <View style={styles.one} />
