@@ -6,7 +6,7 @@ class Blink extends Component {
   render() {
     return (
       <View>
-        <View style={{flex: 1}}>
+        <View style={styles.container}>
           <Text>{this.props.text}</Text>
         </View>
         <View style={styles.one} />
@@ -17,9 +17,11 @@ class Blink extends Component {
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
     backgroundColor: "#999"
   },
   one: {
+    flex: 1,
     width: 50,
     height: 50,
     backgroundColor: "#999"
