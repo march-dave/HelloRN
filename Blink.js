@@ -9,7 +9,7 @@ class Blink extends Component {
         <View style={styles.container}>
           <Text>{this.props.text}</Text>
         </View>
-        <View style={{ width: 50, height: 50, backgroundColor: "green" }} />
+        <View style={styles.one} />
       </View>
     );
   }
@@ -18,7 +18,12 @@ class Blink extends Component {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: "#999"
-  }
+  },
+  one: {
+    width: 50,
+    height: 50,
+    backgroundColor: "#999"
+  },
 });
 
 export default Blink;
