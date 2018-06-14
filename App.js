@@ -9,7 +9,8 @@ import {
   Platform,
   StyleSheet,
   Text,
-  View
+  View,
+  TextInput,
 } from 'react-native';
 import Blink from './Blink.js';
 import HelloButton from './HelloButton';
@@ -23,6 +24,11 @@ import HelloButton from './HelloButton';
 
 type Props = {};
 export default class App extends Component<Props> {
+
+  state = {
+    name: ''
+  }
+
   render() {
     return (
       <View style={styles.container}>
@@ -30,6 +36,8 @@ export default class App extends Component<Props> {
         <HelloButton name="World" />
         <HelloButton name="Button" />
         <Blink text="I love to my Blink" />
+
+        <TextInput style={{height: 40}} placeholder="Please input" onChangeText={ (text) => this.setState( {name: text} ) } />
       </View>
     );
   }
@@ -40,8 +48,8 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'column',
     // justifyContent: 'space-between',
-    // alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    alignItems: 'center',
+    backgroundColor: '#FFFFFF',
   },
   welcome: {
     fontSize: 20,
