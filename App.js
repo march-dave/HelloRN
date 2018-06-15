@@ -11,6 +11,8 @@ import {
   Text,
   View,
   TextInput,
+  Button,
+  TouchableHighlight,
 } from 'react-native';
 import Blink from './Blink.js';
 import HelloButton from './HelloButton';
@@ -32,12 +34,19 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <HelloButton name="Hello"/>
+        {/* <HelloButton name="Hello"/>
         <HelloButton name="World" />
         <HelloButton name="Button" />
-        <Blink text="I love to my Blink" />
+        <Blink text="I love to my Blink" /> */}
 
         <TextInput style={{height: 40}} placeholder="Please input" onChangeText={ (text) => this.setState( {name: text} ) } />
+
+      <Button onPress={ () => {Alert.alert('You tapped the button')}  } title="press" />
+
+        {/* <TouchableHighlight onPress={ ()=> Alert.alert('TouchableHighlight')} >
+
+        </TouchableHighlight> */}
+
       </View>
     );
   }
@@ -47,9 +56,9 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: 'column',
-    // justifyContent: 'space-between',
+    justifyContent: 'space-between',
     alignItems: 'center',
-    backgroundColor: '#FFFFFF',
+    backgroundColor: "#989",
   },
   welcome: {
     fontSize: 20,
