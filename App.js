@@ -14,6 +14,7 @@ import {
   Button,
   TouchableHighlight,
   Alert,
+  TouchableOpacity,
 } from "react-native";
 import Blink from "./Blink.js";
 import HelloButton from "./HelloButton";
@@ -52,11 +53,18 @@ export default class App extends Component<Props> {
           title="press"
         />
 
-        <TouchableHighlight onPress={() => {}}>
+        <TouchableHighlight onPress={() => {Alert.alert('TouchableHighlight')}}>
           <View>
             <Text>TouchableHighlight</Text>
           </View>
         </TouchableHighlight>
+
+        <TouchableOpacity onPress={ ()=> {Alert.alert('Touchable Opacity')}}>
+            <View>
+              <Text>Touchable Opacity</Text>
+            </View>
+        </TouchableOpacity>
+
       </View>
     );
   }
