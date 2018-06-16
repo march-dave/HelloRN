@@ -12,8 +12,8 @@ import {
   View,
   TextInput,
   Button,
-  TouchableHighlight
-  // Alert,
+  TouchableHighlight,
+  Alert,
 } from "react-native";
 import Blink from "./Blink.js";
 import HelloButton from "./HelloButton";
@@ -66,9 +66,9 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: "column",
-    justifyContent: "space-between",
+    // justifyContent: "space-between",
     alignItems: "center",
-    backgroundColor: "#989"
+    // backgroundColor: "#989"
   },
   welcome: {
     fontSize: 20,
