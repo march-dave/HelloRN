@@ -4,7 +4,7 @@
  * @flow
  */
 
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import {
   Platform,
   StyleSheet,
@@ -12,10 +12,11 @@ import {
   View,
   TextInput,
   Button,
-  TouchableHighlight,
-} from 'react-native';
-import Blink from './Blink.js';
-import HelloButton from './HelloButton';
+  TouchableHighlight
+  // Alert,
+} from "react-native";
+import Blink from "./Blink.js";
+import HelloButton from "./HelloButton";
 
 // const instructions = Platform.select({
 //   ios: 'Press Cmd+R to reload,\n' +
@@ -26,10 +27,9 @@ import HelloButton from './HelloButton';
 
 type Props = {};
 export default class App extends Component<Props> {
-
   state = {
-    name: ''
-  }
+    name: ""
+  };
 
   render() {
     return (
@@ -39,14 +39,24 @@ export default class App extends Component<Props> {
         <HelloButton name="Button" />
         <Blink text="I love to my Blink" /> */}
 
-        <TextInput style={{height: 40}} placeholder="Please input" onChangeText={ (text) => this.setState( {name: text} ) } />
+        <TextInput
+          style={{ height: 40 }}
+          placeholder="Please input"
+          onChangeText={text => this.setState({ name: text })}
+        />
 
-      <Button onPress={ () => {Alert.alert('You tapped the button')}  } title="press" />
+        <Button
+          onPress={() => {
+            Alert.alert("You tapped the button");
+          }}
+          title="press"
+        />
 
-        {/* <TouchableHighlight onPress={ ()=> Alert.alert('TouchableHighlight')} >
-
-        </TouchableHighlight> */}
-
+        <TouchableHighlight onPress={() => {}}>
+          <View>
+            <Text>TouchableHighlight</Text>
+          </View>
+        </TouchableHighlight>
       </View>
     );
   }
@@ -55,19 +65,19 @@ export default class App extends Component<Props> {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: 'column',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    backgroundColor: "#989",
+    flexDirection: "column",
+    justifyContent: "space-between",
+    alignItems: "center",
+    backgroundColor: "#989"
   },
   welcome: {
     fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
+    textAlign: "center",
+    margin: 10
   },
   instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+    textAlign: "center",
+    color: "#333333",
+    marginBottom: 5
+  }
 });
