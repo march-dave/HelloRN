@@ -15,6 +15,7 @@ import {
   TouchableHighlight,
   Alert,
   TouchableOpacity,
+  ScrollView,
 } from "react-native";
 import Blink from "./Blink.js";
 import HelloButton from "./HelloButton";
@@ -73,7 +74,9 @@ export default class App extends Component<Props> {
           </View>
         </TouchableNativeFeedback> */}
 
-
+        <ScrollView>
+          <Text style={{height: 100}}>I am Scroll View</Text>
+        </ScrollView>
 
       </View>
     );
