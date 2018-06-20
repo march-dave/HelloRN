@@ -16,6 +16,7 @@ import {
   Alert,
   TouchableOpacity,
   ScrollView,
+  FlatList,
 } from "react-native";
 import Blink from "./Blink.js";
 import HelloButton from "./HelloButton";
@@ -77,6 +78,20 @@ export default class App extends Component<Props> {
         <ScrollView>
           <Text style={{height: 100}}>I am Scroll View</Text>
         </ScrollView>
+
+        <FlatList
+          data={[
+            {key: 'Devin'},
+            {key: 'Jackson'},
+            {key: 'James'},
+            {key: 'Joel'},
+            {key: 'John'},
+            {key: 'Jillian'},
+            {key: 'Jimmy'},
+            {key: 'Julie'},
+          ]}
+          renderItem={({item}) => <Text style={styles.item}>{item.key}</Text>}
+        />
 
       </View>
     );
