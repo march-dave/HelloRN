@@ -16,7 +16,7 @@ import {
   Alert,
   TouchableOpacity,
   ScrollView,
-  FlatList,
+  FlatList
 } from "react-native";
 import Blink from "./Blink.js";
 import HelloButton from "./HelloButton";
@@ -33,6 +33,19 @@ export default class App extends Component<Props> {
   state = {
     name: ""
   };
+
+  componentDidMount() {
+    const getMoviesFromApiAsync = () => {
+      return fetch("https://facebook.github.io/react-native/movies.json")
+        .then(response => response.json())
+        .then(responseJson => {
+          return responseJson.movies;
+        })
+        .catch(error => {
+          console.error(error);
+        });
+    };
+  }
 
   render() {
     return (
@@ -55,16 +68,24 @@ export default class App extends Component<Props> {
           title="press"
         />
 
-        <TouchableHighlight onPress={() => {Alert.alert('TouchableHighlight')}}>
+        <TouchableHighlight
+          onPress={() => {
+            Alert.alert("TouchableHighlight");
+          }}
+        >
           <View>
             <Text>TouchableHighlight</Text>
           </View>
         </TouchableHighlight>
 
-        <TouchableOpacity onPress={ ()=> {Alert.alert('Touchable Opacity')}}>
-            <View>
-              <Text>Touchable Opacity</Text>
-            </View>
+        <TouchableOpacity
+          onPress={() => {
+            Alert.alert("Touchable Opacity");
+          }}
+        >
+          <View>
+            <Text>Touchable Opacity</Text>
+          </View>
         </TouchableOpacity>
 
         {/* <TouchableNativeFeedback
@@ -76,23 +97,22 @@ export default class App extends Component<Props> {
         </TouchableNativeFeedback> */}
 
         <ScrollView>
-          <Text style={{height: 100}}>I am Scroll View</Text>
+          <Text style={{ height: 100 }}>I am Scroll View</Text>
         </ScrollView>
 
         <FlatList
           data={[
-            {key: 'Devin'},
-            {key: 'Jackson'},
-            {key: 'James'},
-            {key: 'Joel'},
-            {key: 'John'},
-            {key: 'Jillian'},
-            {key: 'Jimmy'},
-            {key: 'Julie'},
+            { key: "Devin" },
+            { key: "Jackson" },
+            { key: "James" },
+            { key: "Joel" },
+            { key: "John" },
+            { key: "Jillian" },
+            { key: "Jimmy" },
+            { key: "Julie" }
           ]}
-          renderItem={({item}) => <Text style={styles.item}>{item.key}</Text>}
+          renderItem={({ item }) => <Text style={styles.item}>{item.key}</Text>}
         />
-
       </View>
     );
   }
@@ -103,7 +123,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: "column",
     // justifyContent: "space-between",
-    alignItems: "center",
+    alignItems: "center"
     // backgroundColor: "#989"
   },
   welcome: {
