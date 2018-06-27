@@ -10,6 +10,7 @@ class Blink extends Component {
           <Text>{this.props.text}</Text>
         </View>
         <View style={styles.one} />
+        <View style={styles.two} />
       </View>
     );
   }
@@ -25,6 +26,12 @@ const styles = StyleSheet.create({
     width: 50,
     height: 50,
     backgroundColor: "#999"
+  },
+  two: {
+    // flex: 1,
+    width: 50,
+    height: 50,
+    // backgroundColor: "#999"
   },
 });
 
