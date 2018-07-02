@@ -63,6 +63,12 @@ const styles = StyleSheet.create({
     height: 50,
     // backgroundColor: "#999"
   },
+  eight: {
+    // flex: 1,
+    width: 50,
+    height: 50,
+    // backgroundColor: "#999"
+  },
 });
 
 export default Blink;
