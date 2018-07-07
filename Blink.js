@@ -33,60 +33,60 @@ const styles = StyleSheet.create({
     height: 50,
     // backgroundColor: "#999"
   },
-  three: {
-    // flex: 1,
-    width: 50,
-    height: 50,
-    // backgroundColor: "#999"
-  },
-  four: {
-    // flex: 1,
-    width: 50,
-    height: 50,
-    // backgroundColor: "#999"
-  },
-  five: {
-    // flex: 1,
-    width: 50,
-    height: 50,
-    // backgroundColor: "#999"
-  },
-  six: {
-    // flex: 1,
-    width: 50,
-    height: 50,
-    // backgroundColor: "#999"
-  },
-  seven: {
-    // flex: 1,
-    width: 50,
-    height: 50,
-    // backgroundColor: "#999"
-  },
-  eight: {
-    // flex: 1,
-    width: 50,
-    height: 50,
-    // backgroundColor: "#999"
-  },
-  nine: {
-    // flex: 1,
-    width: 50,
-    height: 50,
-    // backgroundColor: "#999"
-  },
-  ten: {
-    // flex: 1,
-    width: 50,
-    height: 50,
-    // backgroundColor: "#999"
-  },
-  eleven: {
-    // flex: 1,
-    width: 50,
-    height: 50,
-    // backgroundColor: "#999"
-  },
+  // three: {
+  //   // flex: 1,
+  //   width: 50,
+  //   height: 50,
+  //   // backgroundColor: "#999"
+  // },
+  // four: {
+  //   // flex: 1,
+  //   width: 50,
+  //   height: 50,
+  //   // backgroundColor: "#999"
+  // },
+  // five: {
+  //   // flex: 1,
+  //   width: 50,
+  //   height: 50,
+  //   // backgroundColor: "#999"
+  // },
+  // six: {
+  //   // flex: 1,
+  //   width: 50,
+  //   height: 50,
+  //   // backgroundColor: "#999"
+  // },
+  // seven: {
+  //   // flex: 1,
+  //   width: 50,
+  //   height: 50,
+  //   // backgroundColor: "#999"
+  // },
+  // eight: {
+  //   // flex: 1,
+  //   width: 50,
+  //   height: 50,
+  //   // backgroundColor: "#999"
+  // },
+  // nine: {
+  //   // flex: 1,
+  //   width: 50,
+  //   height: 50,
+  //   // backgroundColor: "#999"
+  // },
+  // ten: {
+  //   // flex: 1,
+  //   width: 50,
+  //   height: 50,
+  //   // backgroundColor: "#999"
+  // },
+  // eleven: {
+  //   // flex: 1,
+  //   width: 50,
+  //   height: 50,
+  //   // backgroundColor: "#999"
+  // },
 });
 
 export default Blink;
