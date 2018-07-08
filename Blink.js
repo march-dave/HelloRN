@@ -25,13 +25,13 @@ const styles = StyleSheet.create({
     flex: 1,
     width: 50,
     height: 50,
-    backgroundColor: "#999"
+    backgroundColor: "#000"
   },
   two: {
     // flex: 1,
     width: 50,
     height: 50,
-    // backgroundColor: "#999"
+    backgroundColor: "#999"
   },
   // three: {
   //   // flex: 1,
