@@ -27,12 +27,12 @@ const styles = StyleSheet.create({
     height: 50,
     backgroundColor: "#000"
   },
-  two: {
-    // flex: 1,
-    width: 50,
-    height: 50,
-    backgroundColor: "#789"
-  },
+  // two: {
+  //   // flex: 1,
+  //   width: 50,
+  //   height: 50,
+  //   backgroundColor: "#789"
+  // },
   // three: {
   //   // flex: 1,
   //   width: 50,
