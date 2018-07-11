@@ -65,7 +65,7 @@ export default class App extends Component<Props> {
           onPress={() => {
             Alert.alert("You tapped the button");
           }}
-          title="press"
+          title="press 2"
         />
 
         <TouchableHighlight
