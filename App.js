@@ -70,7 +70,7 @@ export default class App extends Component<Props> {
 
         <TouchableHighlight
           onPress={() => {
-            Alert.alert("TouchableHighlight");
+            Alert.alert("Touchable Highlight");
           }}
         >
           <View>
